@@ -1,0 +1,10 @@
+[build]
+target = "riscv32ec-unknown-none-elf.json"
+
+[target.riscv32ec-unknown-none-elf]
+runner = "wlink -v flash --enable-sdi-print --watch-serial"
+rustflags = ["-C", "link-arg=-Tlink.x"]
+
+[unstable]
+build-std = ["alloc", "core"]
+build-std-features = ["compiler-builtins-mem"]

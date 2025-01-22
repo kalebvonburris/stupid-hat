@@ -1,0 +1,40 @@
+[package]
+name = "stupid-hat"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "stupid_hat"
+path = "src/main.rs"
+test = false
+doctest = false
+bench = false
+
+[profile.dev]
+strip = false
+lto = true
+opt-level = 's'
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+debug = false
+strip = true
+panic = 'abort'
+
+[profile.release.build-override]
+codegen-units = 1
+debug = false
+opt-level = 3
+strip = true
+
+[dependencies]
+panic-halt = "1.0.0"
+ch32-hal = { git = "https://github.com/ch32-rs/ch32-hal", features = [
+        "ch32v003f4p6",
+    ] }
+qingke-rt = "0.5.0"
+qingke = "0.5.0"
+embedded-hal = "1.0.0"
+stupid-ascii = { path = "stupid-ascii/" }
