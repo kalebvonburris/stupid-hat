@@ -1,1 +1,0 @@
-/home/kaleb/Repos/stupid-hat/stupid-ascii/target/x86_64-unknown-linux-gnu/debug/stupid-ascii: /home/kaleb/Repos/stupid-hat/stupid-ascii/src/ascii.rs /home/kaleb/Repos/stupid-hat/stupid-ascii/src/dumb_code.rs /home/kaleb/Repos/stupid-hat/stupid-ascii/src/lib.rs /home/kaleb/Repos/stupid-hat/stupid-ascii/src/main.rs
