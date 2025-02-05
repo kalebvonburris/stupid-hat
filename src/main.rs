@@ -13,7 +13,7 @@ fn main() -> ! {
 
     let peripherals = hal::init(config);
 
-    let mut led = Output::new(peripherals.PD1, Level::Low, Speed::Low);
+    let mut led = Output::new(peripherals.PD1, Level::Low, Speed::High);
 
     let mut delay = Delay;
 

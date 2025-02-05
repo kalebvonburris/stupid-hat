@@ -38,3 +38,5 @@ qingke-rt = "0.5.0"
 qingke = "0.5.0"
 embedded-hal = "1.0.0"
 stupid-ascii = { path = "stupid-ascii/" }
+ws2812-spi = "0.5.0"
+smart-leds = "0.4.0"
